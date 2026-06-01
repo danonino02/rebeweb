@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Rebeca ✨❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="frasesCorazon.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+
+<div class="luna" onclick="mostrarLuna()"></div>
+
+<!-- PANEL SUPERIOR -->
+<div id="panel">
+  <button onclick="mostrarMensaje()">Ábreme ❤️</button>
+  <button onclick="toggleTimer()">Nuestro tiempo juntos ⏳</button>
+  <button onclick="mostrarFraseCorazon()">Frases ✨</button>
+</div>
+
+<!-- Mensajes principales -->
+<div id="mensaje1" class="mensaje">
+  <div id="texto1" class="texto"></div>
+  <button onclick="mostrarExtra()">Siguiente mensaje ➜</button>
+</div>
+
+<div id="mensaje2" class="mensaje">
+  <div id="texto2" class="texto"></div>
+  <button onclick="mostrarFinal()">Siguiente mensaje ➜</button>
+</div>
+
+<div id="mensaje3" class="mensaje">
+  <div id="texto3" class="texto"></div>
+  <button onclick="cerrar('mensaje3')">Cerrar ✦</button>
+</div>
+
+<!-- Mensaje oculto de la luna -->
+<div id="mensajeLuna" class="mensaje">
+  <div id="textoLuna" class="texto"></div>
+  <button onclick="cerrar('mensajeLuna')">Cerrar ✦</button>
+</div>
+
+<!-- NUEVO: Mensaje de frases del corazón -->
+<div id="mensajeFraseCorazon" class="mensaje">
+  <div id="textoFraseCorazon" class="texto"></div>
+  <button onclick="otraFrase()">Generar otra frase ✨</button>
+  <button onclick="cerrar('mensajeFraseCorazon')">Cerrar ✦</button>
+</div>
+
+<!-- TIMER FIJO ABAJO -->
+<div id="timerBox">
+  <div id="timerText"></div>
+</div>
+
+<!-- ICONO DE REGALO -->
+<div id="regalo" onclick="mostrarRegalo()"></div>
+
+<!-- MENSAJE DEL REGALO -->
+<div id="mensajeRegalo" class="mensaje">
+  <div id="textoRegalo" class="texto"></div>
+  <button onclick="cerrar('mensajeRegalo')">Cerrar ✦</button>
+</div>
+
+</body>
+</html>
